@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    printf("\n the sizeof integer is %d",sizeof(int));
+    printf("\n the sizeof float is %d",sizeof(float));
+    printf("\n the sizeof char is %d",sizeof(char));
+    printf("\n the sizeof double is %d",sizeof(double));
+    return 0;
+}
