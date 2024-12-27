@@ -1,0 +1,16 @@
+#include<stdio.h>
+void printValues(int** values, int size)
+ {
+    int i;
+    for(i=0;i<size;i++)
+    {
+        printf("%d",*(*(values+i)));
+    }
+ }
+int main()
+    {
+    int x = 10, y = 20, z = 30;
+    int* values[] = {&x, &y, &z};
+    int size = sizeof(values) / sizeof(values[0]);
+    printvalues(values,size);
+    }
