@@ -1,0 +1,14 @@
+#include<stdio.h>
+void modifyValue(int** ptr)
+ {
+    **ptr=20;
+}
+int main() {
+    int x = 10;
+    int* ptr = &x;
+    printf("Before modification: x = %d\n", x);
+    modifyValue(&ptr);
+    printf("After modification: x = %d\n", x);
+    return 0;
+}
+
